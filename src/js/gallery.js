@@ -1,7 +1,7 @@
-const FOCUS_IMG = document.getElementById("focus-img")
-const FOCUS_CONTAINER = document.getElementById("focus-container")
+const FOCUS_IMG = document.querySelector("#focus-img");
+const FOCUS_CONTAINER = document.querySelector("#focus-container");
 const IMGS = Array.from(document.querySelectorAll(".image:not(.img-split)"));
-var currentImage = 0	// current image index on focus
+let currentImage = 0;	// current image index on focus
 
 
 
@@ -39,8 +39,8 @@ function previousImage() {	// focus the previous image, if its the first, focus 
 
 
 // add events to the left and right arrows
-document.getElementById("focus-arrow-right").addEventListener("click", nextImage)
-document.getElementById("focus-arrow-left").addEventListener("click", previousImage)
+document.querySelector("#focus-arrow-right").addEventListener("click", nextImage)
+document.querySelector("#focus-arrow-left").addEventListener("click", previousImage)
 
 // Add the event listeners to all the images in the gallery
 IMGS.forEach((e) => {e.addEventListener("click", () => {setFocusImage(e)})})
