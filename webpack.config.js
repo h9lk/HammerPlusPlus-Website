@@ -41,7 +41,7 @@ module.exports = {
   entry: './src/js/main.js',
 
   output: {
-    filename: 'main.js',
+    filename: 'js/main.js',
     path: buildPath,
     clean: true,
     assetModuleFilename: 'img/[name][ext]'
@@ -84,13 +84,13 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf)$/i,
         exclude: /node_modules/,
         generator : {
-          filename : 'font/[name][ext]',
+          filename : 'img/[name][ext]',
         }
       },
       {
         test: /\.(s?css)$/i,
         exclude: /node_modules/,
-        use: ['css-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
     ],
   },
