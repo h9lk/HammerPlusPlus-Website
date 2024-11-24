@@ -40,6 +40,9 @@ module.exports = {
   },
 
   entry: './src/js/script.js',
+  stats: {
+    warnings:false
+  },
 
   output: {
     filename: 'script.js',

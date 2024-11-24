@@ -1,9 +1,6 @@
-import mainPage from "./modules/main.js";
-import gallery from "./modules/gallery.js";
+import genNav from "./modules/main.js";
 import '../sass/style.scss';
 
-document.addEventListener("DOMContentLoaded", () => {
-
-  mainPage();
-  gallery();
+document.addEventListener('DOMContentLoaded', () => {
+  genNav();
 });

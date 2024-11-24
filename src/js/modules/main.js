@@ -6,6 +6,7 @@ function genNav() {
 	if (!nav) return;
 
 	const current = location.pathname.split("/").pop().replace(".html", "");
+  console.log(current);
 	const pages = ["index", "features", "updates", "download", "credits"];
 
 	pages.forEach(page => {
@@ -87,3 +88,5 @@ function addPatches() {
 		pre.innerHTML = pre.innerHTML.replaceAll("\t", "   ");
 	})
 }
+
+export default genNav;
