@@ -84,7 +84,7 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf)$/i,
         exclude: /node_modules/,
         generator : {
-          filename : 'img/[name][ext]',
+          filename : 'font/[name][ext]',
         }
       },
       {
