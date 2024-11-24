@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="src/css/main.css">
 		<link rel="stylesheet" href="styles/updates.css">
-		<link rel="icon" type=src/img/png href="src/img/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type=img/png href="src/img/favicon-32x32.png" sizes="32x32">
 	</head>
 	<body>
 		<div class="content">
@@ -15,9 +15,9 @@
 			</a>
 			<nav id="navbar"></nav>
 			<article>
-			
+
 <div class="patch">
-	<h1>Build 8869 (November 17th 2024)</h1>	
+	<h1>Build 8869 (November 17th 2024)</h1>
 	<pre>
 - Added Portal 2 support
 - Added HLMV++ as a bundle for each branch
@@ -52,31 +52,31 @@
 - Middle mouse controls are now enabled by default for Garry's Mod branch (to match its stock Hammer)
 - Removed unused "Crosshair Cursor" 2D view option that never did anything
 </div>
-			
-			
+
+
 <div class="patch">
-	<h1>Build 8868 Hotfix (October 18th 2024)</h1>	
+	<h1>Build 8868 Hotfix (October 18th 2024)</h1>
 	<pre>
 - Hotfix for Team Fortress 2 update on October 18th, which caused Hammer++ to fail to boot on startup (again)
 	- Version number remains the same as next build for other games isn't ready still
 </div>
 
 <div class="patch">
-	<h1>Build 8868 Hotfix (October 10th 2024)</h1>	
+	<h1>Build 8868 Hotfix (October 10th 2024)</h1>
 	<pre>
 - Hotfix for Team Fortress 2 update on October 10th, which caused Hammer++ to fail to boot on startup
 	- Version number remains the same as next build for other games isn't ready yet
 - Fixed random rendering crash from particles with world trace colliders (only affected 64-bit)
 </div>
-			
+
 <div class="patch">
-	<h1>Build 8868 Hotfix (October 7th 2024)</h1>	
+	<h1>Build 8868 Hotfix (October 7th 2024)</h1>
 	<pre>
 - Hotfix for Garry's Mod update on October 7th, which caused Hammer++ to crash on startup
 	- Version number remains the same as next build for other games isn't ready yet
 - Fixed random rendering crash from particles with world trace colliders (only affected 64-bit)
-</div>		
-			
+</div>
+
 <div class="patch">
 	<h1>Build 8868 (July 28th 2024)</h1>
 	<pre>
@@ -117,15 +117,15 @@
 - Maybe fixed textures using LightmappedReflective shader appearing as missing texture in some games
 - Fixed command parameters breaking in Run Map Expert if a newline was accidentally copy pasted
 	- Newlines are now removed from parameters automatically
-</div>			
-			
+</div>
+
 <div class="patch">
 	<h1>Build 8867 (July 2nd 2024)</h1>
 	<pre>
 - Hotfix for model browser/color picker killing the renderer in Garry's Mod after July 1st update
-- Restored support for engine -> Hammer communication via the "map_edit" command 
+- Restored support for engine -> Hammer communication via the "map_edit" command
 	- In Garry's Mod, this also makes hammer.SendCommand work now
-	- Unlike stock Hammer, Hammer++ ignores map version checking and will always allow a map to be edited 
+	- Unlike stock Hammer, Hammer++ ignores map version checking and will always allow a map to be edited
 - Added "Import" button to Expert Compile window, allows importing commands from a .cfg
 - Added "Remove bad collision faces" to Propper (on by default), removes thin/tiny collision faces
 	- This fixes complex brushwork sometimes creating a shrinkwrapped collision model
@@ -134,7 +134,7 @@
 - Added 2D view option to change default rotation angle (15 degrees)
 - Added 2D view option to change scaling interval for the grid, default is x2
 	- Note that it renders in low resolution for performance reasons
-- HDR Lighting Preview now uses a half-brightness lightmap for fullbright materials	
+- HDR Lighting Preview now uses a half-brightness lightmap for fullbright materials
 	- Tool textures such as nodraw should no longer make you blind
 - TF2: Quotation marks ("") in RunScriptCode inputs are now automatically replaced with backticks (`)
 - Improved clipping tool performance on large maps
@@ -172,8 +172,8 @@
 	- Copying entities from a VMF that is closed might crash
 	  Workaround: Don't close the VMF until you have finished pasting
 	</pre>
-</div>				
-			
+</div>
+
 <div class="patch">
 	<h1>Build 8866 (May 19th 2024)</h1>
 	<pre>
@@ -193,7 +193,7 @@
 	- Left 4 Dead 2: This fixes lighting preview brightness being very inaccurate in dark areas, as the game uses up to x8 tonemap scaling by default!
 	- Left 4 Dead 2: 2D skybox preview will now show HDR skyboxes correctly
 	- Moved Map -> Set Color Correction to lighting preview's options
-	- When a map is loaded for the first time, bloom/tonemap settings are copied from the first found env_tonemap_controller 
+	- When a map is loaded for the first time, bloom/tonemap settings are copied from the first found env_tonemap_controller
 	- If there is multiple env_tonemap_controllers, the one with "global" in the name is favored first
 	- LDR mode can be re-enabled in Tools -> Options -> Hammer++ (not recommended)
 - Upgraded texture browser to display WorldVertexTransition blends automatically
@@ -204,7 +204,7 @@
 - Added error message in compile window if VVIS fails potentially due to a leak
 - Added extra info on showing compile window errors to other people
 - Added warning message if resource files for model/particle browser are missing (they will crash without them)
-- Loading a pointfile will now center camera on the exit point 
+- Loading a pointfile will now center camera on the exit point
 - Pointfiles will now select the (brush) entity responsible for the leak when loaded
 - Increased pointfile color saturation
 - Added slider for Near Clipping Plane in Options -> 3D views
@@ -255,8 +255,8 @@
 - KNOWN BUG: The texture thumbnails in the dropdown list don't render
 	- As a workaround, use the up/down arrow keys to see them for now
 	</pre>
-</div>			
-			
+</div>
+
 <div class="patch">
 	<h1>Build 8865 (April 21st 2024)</h1>
 	<pre>
@@ -282,7 +282,7 @@
 - Added toggleable support for 4 way displacement blends (default is off)
 	- To enable, open hammerplusplus_settings.ini and change Enable4WayBlends under [General] to true
 	- The Blend button under Sculpt will now be enabled, and the extra information will be read and saved in VMFs
-	- NOTE: The game itself must support this feature for it to work! 
+	- NOTE: The game itself must support this feature for it to work!
 	  The blends will not show up in Hammer++ unless shader support is present
 	  If shaders are implemented to show 4WayBlends under Garry's Mod, this will serve as support for Black Mesa
 - VMFs can be drag and dropped (like Garry's Mod Hammer)
@@ -311,7 +311,7 @@
 - Fixed texture axes still showing on faces when selected with helpers toggled off
 - Fixed hidden 3D sky instances and sky_cameras being considered as valid for preview
 - Fixed env_beam/env_laser/point_spotlight sprites expanding the bounding box
-- Fixed mdl corruption if more than 512mb total of model data was loaded	
+- Fixed mdl corruption if more than 512mb total of model data was loaded
 - Fixed incorrect path being generated when selecting Entity Scripts via the Manage button
 - Fixed list of search paths in Messages window being truncated if it was longer than 4096 characters
 - Fixed Run Map commands being wiped if the Edit window was exited without pressing Close
@@ -326,9 +326,9 @@
 - Fixed crash if trigger_catapult had missing keyvalues
 - Fixed crash if a face with valid luxels became invalid (0 area) and was baked in lighting preview
 	</pre>
-</div>			
-					
-			
+</div>
+
+
 <div class="patch">
 	<h1>Build 8864 (November 1st 2022)</h1>
 	<pre>
@@ -345,8 +345,8 @@
 	- If you want to restore old behavior, set InstanceCollapseHidden to 1 in the settings.ini
 - CSGO: Fixed crash when loading Portal 2/L4D2 particles
 	</pre>
-</div>			
-			
+</div>
+
 <div class="patch">
 	<h1>Build 8863 (October 31st 2022)</h1>
 	<pre>
@@ -382,7 +382,7 @@
 - Reverted I/O performance changes to an earlier build. This should fix the rare situation where entities were unintentionally swapped
 	</pre>
 </div>
-			
+
 <div class="patch">
 	<h1>Build 8862 (July 1st 2022)</h1>
 	<pre>
@@ -403,8 +403,8 @@
 - Hammer++ will now attempt to autosave under a memory crash
 - Removed dependency on BASS audio player, replaced with alternative
 	</pre>
-</div>				
-			
+</div>
+
 <div class="patch">
 	<h1>Build 8861 (June 25th 2022)</h1>
 	<pre>
@@ -414,8 +414,8 @@
 - Fixed thumbnails not loading for certain textures
 - Fixed alignment issues with func_monitor textures
 	</pre>
-</div>			
-			
+</div>
+
 <div class="patch">
 	<h1>Build 8860 (February 10th 2022)</h1>
 	<pre>
@@ -423,8 +423,8 @@
 - Fixed precision loss when creating arches with height addition consisting of decimals
 - Fixed autosaves being flagged as invalid and displaying a warning message
 	</pre>
-</div>					
-			
+</div>
+
 <div class="patch">
 	<h1>Build 8859 (February 9th 2022)</h1>
 	<pre>
@@ -439,11 +439,11 @@
 - Fixed crashes when painting displacements
 - Fixed issue where brush wouldn't move after selecting something in 3D view while box select was active
 - Fixed entity targetnames referenced in an instance in outputs not being highlighted blue
-- Fixed vmf_autosave files being incorrectly saved as 'vmf_autosavx'	
+- Fixed vmf_autosave files being incorrectly saved as 'vmf_autosavx'
 - Fixed missing texture sprites being very small
 - CSGO: Fixed Steam error when launching game from standard Run Map dialog
 	</pre>
-</div>			
+</div>
 
 <div class="patch">
 	<h1>Build 8858 (January 30th 2022)</h1>

@@ -50,8 +50,8 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(handler),
     new HtmlWebpackPlugin({
-      template: "./index.html",
-      favicon: "./source/favicon.ico",
+      template: "./src/index.html",
+      favicon: "./src/favicon.ico",
       inject: true,
       chunks: ['index'],
     }),
