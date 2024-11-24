@@ -2,6 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
@@ -38,10 +39,10 @@ module.exports = {
     maxAssetSize: 512000
   },
 
-  entry: './src/js/main.js',
+  entry: './src/js/script.js',
 
   output: {
-    filename: 'js/main.js',
+    filename: 'script.js',
     path: buildPath,
     clean: true,
     assetModuleFilename: 'img/[name][ext]'
@@ -67,9 +68,10 @@ module.exports = {
   optimization: {
     minimize: true,
     minimizer: [
+      new CssMinimizerPlugin(),
       new TerserPlugin({
         test: /\.js$/i,
-      }),
+      })
     ]
   },
 
