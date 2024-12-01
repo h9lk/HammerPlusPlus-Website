@@ -1,8 +1,8 @@
-/* eslint-disable no-undef */
 "use strict";
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 const buildPath = path.resolve(__dirname, 'build');
@@ -57,6 +57,7 @@ module.exports = {
       inject: true,
       chunks: ['index'],
     }),
+    new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [{
         from: path.resolve(__dirname, 'src/img/'),
@@ -82,7 +83,7 @@ module.exports = {
       {
         test: /\.(s?css)$/i,
         exclude: /node_modules/,
-        use: ['css-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
     ],
   },
