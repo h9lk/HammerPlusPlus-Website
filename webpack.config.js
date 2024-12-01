@@ -1,10 +1,8 @@
+/* eslint-disable no-undef */
 "use strict";
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 const buildPath = path.resolve(__dirname, 'build');
@@ -59,7 +57,6 @@ module.exports = {
       inject: true,
       chunks: ['index'],
     }),
-    new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [{
         from: path.resolve(__dirname, 'src/img/'),
@@ -67,16 +64,6 @@ module.exports = {
       }]
     })
   ].concat(multipleHtmlPlugins),
-
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new CssMinimizerPlugin(),
-      new TerserPlugin({
-        test: /\.js$/i,
-      })
-    ]
-  },
 
   module: {
     rules: [
@@ -95,7 +82,7 @@ module.exports = {
       {
         test: /\.(s?css)$/i,
         exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: ['css-loader', 'sass-loader']
       },
     ],
   },
