@@ -3,7 +3,8 @@
  */
 function main() {
   const splits = document.querySelectorAll(".img-split");
-  const patches = Array.from(document.querySelectorAll(".patch"));
+  const patches = document.querySelectorAll(".patch");
+  const gifs = document.querySelectorAll(".static");
 
   function genNav() {
     const nav = document.querySelector(".navbar");
@@ -40,11 +41,13 @@ function main() {
         } else if (split.classList.contains("inactive")) {
           split.classList.remove("inactive");
           split.classList.add("active");
-        } else
+        } else {
           split.classList.add("active");
+        }
       })
     })
   }
+
 
   /**
    * Sets the listeners to all the patch notes.
@@ -56,10 +59,12 @@ function main() {
     patches.forEach(patch => {
       patch.querySelector("h1").addEventListener("click", () => {
         patches.forEach(p => {
-          if (p === patch)
+          if (p === patch) {
             p.classList.toggle("active");
-          else
+          }
+          else {
             p.classList.remove("active");
+          }
         })
       })
 
@@ -71,10 +76,8 @@ function main() {
 
   if(splits.length > 1) {
     setSplitImages();
-  }
-
-  if (patches.length > 1) {
-    addPatches()
+  } else if (patches.length > 1) {
+    addPatches();
   }
 
   genNav();
