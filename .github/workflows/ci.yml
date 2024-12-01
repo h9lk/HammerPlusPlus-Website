@@ -16,7 +16,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          yarn add
+          yarn
           yarn build
 
       - name: Deploy 🚀
