@@ -25,6 +25,9 @@
   transition: 0.5s;
   position: relative;
 }
+.feature-grid .cell > .static {
+  display: none;
+}
 .feature-grid .cell > video {
   object-position: bottom;
   object-fit: cover;
@@ -61,7 +64,7 @@
   --split-perc: 105%;
 }
 .feature-grid .cell > .cell-content {
-  --animation-speed: .6s;
+  --animation-speed: 0.6s;
   width: 100%;
   padding: 1em;
   transition: var(--animation-speed) cubic-bezier(0.87, 0, 0.66, 1.03);
@@ -238,7 +241,9 @@
   visibility: visible;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -287,7 +292,8 @@ hr {
   box-shadow: 0 5px 20px 2px #be00be;
 }
 
-ul, li {
+ul,
+li {
   list-style-position: inside;
   list-style-type: "- ";
 }
@@ -396,7 +402,7 @@ article .section {
   background-position: right;
   transition: 0.5s;
   /* yeah, this is a bit ugly. Just to make things clear, we are adding
-  	the alpha (AA) value at the of this color, which is in HEX */
+  the alpha (AA) value at the of this color, which is in HEX */
   background-image: linear-gradient(90deg, #be00be50, #be00be25, #be00be25);
 }
 article .section:hover {
