@@ -1,3 +1,5 @@
+@use 'vars';
+
 *,
 ::after,
 ::before {
@@ -8,7 +10,7 @@
 
 ::selection {
   color: black;
-  background-color: $color-accent-bright;
+  background-color: vars.$color-accent-bright;
 }
 
 // Scrollbar
@@ -18,18 +20,18 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: $color-dark;
+  background-color: vars.$color-dark;
   border-radius: 50vw;
   margin: 10px;
 }
 
 ::-webkit-scrollbar-corner {
-  background-color: $color-dark;
+  background-color: vars.$color-dark;
   border-radius: 50vw;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $color-accent;
+  background-color: vars.$color-accent;
   border-radius: 50vw;
 }
 
@@ -50,8 +52,8 @@ p {
 }
 
 hr {
-  border: 1px solid $color-accent;
-  box-shadow: 0 5px 20px 2px $color-accent;
+  border: 1px solid vars.$color-accent;
+  box-shadow: 0 5px 20px 2px vars.$color-accent;
 }
 
 ul,
@@ -61,11 +63,11 @@ li {
 }
 
 a {
-  color: $color-accent-bright;
+  color: vars.$color-accent-bright;
 
   &:hover,
   &:focus {
-    text-shadow: 0 0 2px $color-accent-bright;
+    text-shadow: 0 0 2px vars.$color-accent-bright;
   }
 }
 
@@ -122,7 +124,7 @@ nav {
       top: 100%;
       height: 0%;
       content: '';
-      background-color: $color-accent;
+      background-color: vars.$color-accent;
       transition: 0.5s;
       z-index: -1;
       border-radius: 10px 10px 0 0;
@@ -131,8 +133,9 @@ nav {
     &.selected::after {
       top: 95%;
       height: 5%;
-      filter: drop-shadow(0 0 5px $color-accent)
-        drop-shadow(0 0 10px $color-accent) drop-shadow(0 0 15px $color-accent);
+      filter: drop-shadow(0 0 5px vars.$color-accent)
+        drop-shadow(0 0 10px vars.$color-accent)
+        drop-shadow(0 0 15px vars.$color-accent);
     }
 
     &:hover,
@@ -155,8 +158,8 @@ nav {
 }
 
 article {
-  border: 2px solid $color-accent;
-  box-shadow: inset 0 0 50px -10px $color-accent;
+  border: 2px solid vars.$color-accent;
+  box-shadow: inset 0 0 50px -10px vars.$color-accent;
   padding: 2em;
   border-radius: 10px;
   color: white;
@@ -171,7 +174,7 @@ article {
     margin-top: 2em;
     padding-block: 1em;
     padding-inline: 1em;
-    border-left: 2px solid $color-accent;
+    border-left: 2px solid vars.$color-accent;
     position: relative;
     background-size: 150%;
     background-position: right;
@@ -181,9 +184,9 @@ article {
 			the alpha (AA) value at the of this color, which is in HEX */
     background-image: linear-gradient(
       90deg,
-      #{$color-accent}50,
-      #{$color-accent}25,
-      #{$color-accent}25
+      #{vars.$color-accent}50,
+      #{vars.$color-accent}25,
+      #{vars.$color-accent}25
     );
 
     &:hover {
@@ -207,12 +210,12 @@ article {
   .info {
     font-size: 1.1em;
     text-align: center;
-    text-shadow: 0 0 5px $color-accent-bright;
+    text-shadow: 0 0 5px vars.$color-accent-bright;
   }
 }
 
 footer {
-  border-top: 4px solid $color-accent;
+  border-top: 4px solid vars.$color-accent;
   background-color: #ad00ad30;
   color: white;
   display: flex;
@@ -270,7 +273,7 @@ footer {
     transform: scale(1.05);
 
     filter: brightness(1.5) drop-shadow(0 0 10px rgba(255, 255, 255, 0.514))
-      drop-shadow(0 0 2px $color-accent-bright);
+      drop-shadow(0 0 2px vars.$color-accent-bright);
   }
 }
 

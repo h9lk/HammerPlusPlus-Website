@@ -7,7 +7,7 @@ export default [
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   {
-    ignores: ['node_modules', 'build', '*.config.js']
+    ignores: ['node_modules', 'build', '*.config.js', '*.config.cjs']
   },
   eslintConfigPrettier
 ];
