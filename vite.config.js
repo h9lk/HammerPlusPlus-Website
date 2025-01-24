@@ -1,20 +1,23 @@
 import { defineConfig } from 'vite'
+const path = 'src';
 
 export default defineConfig({
-  root: 'src',
+  root: path,
   emptyOutDir: true,
   minify: true,
   build: {
     rollupOptions: {
       input: {
-        main: 'src/index.html',
-        credits: 'src/credits.html',
-        download: 'src/download.html',
-        features: 'src/features.html',
-        updates: 'src/updates.html'
+        main: `${path}/index.html`,
+        credits: `${path}/credits.html`,
+        download: `${path}/download.html`,
+        features: `${path}/features.html`,
+        updates: `${path}/updates.html`
       },
       output: {
-        assetFileNames: 'assets/[name].[ext]'
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
       }
     },
     outDir: '../build',
