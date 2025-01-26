@@ -4,7 +4,6 @@ const path = 'src';
 export default defineConfig({
   root: path,
   emptyOutDir: true,
-  minify: true,
   build: {
     rollupOptions: {
       input: {
@@ -15,9 +14,14 @@ export default defineConfig({
         updates: `${path}/updates.html`
       },
       output: {
-        entryFileNames: `assets/[name].js`,
-        chunkFileNames: `assets/[name].js`,
-        assetFileNames: `assets/[name].[ext]`
+        entryFileNames: `js/[name].js`,
+        chunkFileNames: `js/[name].js`,
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'script.css') {
+            return 'css/style.css';
+          }
+          return `img/${assetInfo.name}`;
+        },
       }
     },
     outDir: '../build',
