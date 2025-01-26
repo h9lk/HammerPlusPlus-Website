@@ -1,28 +1,4 @@
-<html lang="en">
-  <head>
-    <title>Hammer++ : Updates</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="img/png"
-      href="/img/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <script type="module" crossorigin src="/js/script.js"></script>
-    <link rel="stylesheet" crossorigin href="/css/style.css">
-  </head>
-  <body>
-    <div class="content">
-      <a class="logo" href="index.html">
-        <img src="/img/logo.png" />
-      </a>
-      <nav class="navbar"></nav>
-      <article>
-        <div class="patch">
-          <h1>Build 8869 (November 17th 2024)</h1>
-          <pre>
+<html lang="en"><head><title>Hammer++ : Updates</title><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="icon" type="img/png" href="img/favicon-32x32.png" sizes="32x32"/><link rel="stylesheet" href="main.css"/></head><body><div class="content"><a class="logo" href="index.html"><img src="img/logo.png"/></a><nav class="navbar"></nav><article><div class="patch"><h1>Build 8869 (November 17th 2024)</h1><pre>
 - Added Portal 2 support
 - Added HLMV++ as a bundle for each branch
 	- This is optional to use and isn't required for Hammer++ to function
@@ -55,42 +31,18 @@
 - Moved update detector to another thread, should fix a freeze on startup with no/slow internet
 - Middle mouse controls are now enabled by default for Garry's Mod branch (to match its stock Hammer)
 - Removed unused "Crosshair Cursor" 2D view option that never did anything
-</pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8868 Hotfix (October 18th 2024)</h1>
-          <pre>
+</pre></div><div class="patch"><h1>Build 8868 Hotfix (October 18th 2024)</h1><pre>
 - Hotfix for Team Fortress 2 update on October 18th, which caused Hammer++ to fail to boot on startup (again)
 	- Version number remains the same as next build for other games isn't ready still
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8868 Hotfix (October 10th 2024)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8868 Hotfix (October 10th 2024)</h1><pre>
 - Hotfix for Team Fortress 2 update on October 10th, which caused Hammer++ to fail to boot on startup
 	- Version number remains the same as next build for other games isn't ready yet
 - Fixed random rendering crash from particles with world trace colliders (only affected 64-bit)
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8868 Hotfix (October 7th 2024)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8868 Hotfix (October 7th 2024)</h1><pre>
 - Hotfix for Garry's Mod update on October 7th, which caused Hammer++ to crash on startup
 	- Version number remains the same as next build for other games isn't ready yet
 - Fixed random rendering crash from particles with world trace colliders (only affected 64-bit)
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8868 (July 28th 2024)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8868 (July 28th 2024)</h1><pre>
 - Added UV lock tool, behaves identically to JACK editor's UV tool
 	- Toggle it from the new toolbar button
 	- When enabled, textures are "locked" in place when moving vertices in vertex edit mode
@@ -128,12 +80,7 @@
 - Maybe fixed textures using LightmappedReflective shader appearing as missing texture in some games
 - Fixed command parameters breaking in Run Map Expert if a newline was accidentally copy pasted
 	- Newlines are now removed from parameters automatically
-  </pre>
-        </div>
-
-        <div class="patch">
-          <h1>Build 8867 (July 2nd 2024)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8867 (July 2nd 2024)</h1><pre>
 - Hotfix for model browser/color picker killing the renderer in Garry's Mod after July 1st update
 - Restored support for engine -> Hammer communication via the "map_edit" command
 	- In Garry's Mod, this also makes hammer.SendCommand work now
@@ -183,12 +130,7 @@
 - KNOWN BUGS:
 	- Copying entities from a VMF that is closed might crash
 	  Workaround: Don't close the VMF until you have finished pasting
-	</pre>
-        </div>
-
-        <div class="patch">
-          <h1>Build 8866 (May 19th 2024)</h1>
-          <pre>
+	</pre></div><div class="patch"><h1>Build 8866 (May 19th 2024)</h1><pre>
 - Added native Propper tool
 	- Converts selected brushes/displacements to a model automatically
 	- Works on all games and serves as a replacement for the old standalone Propper tool
@@ -266,12 +208,7 @@
 <br>
 - KNOWN BUG: The texture thumbnails in the dropdown list don't render
 	- As a workaround, use the up/down arrow keys to see them for now
-	</pre>
-        </div>
-
-        <div class="patch">
-          <h1>Build 8865 (April 21st 2024)</h1>
-          <pre>
+	</pre></div><div class="patch"><h1>Build 8865 (April 21st 2024)</h1><pre>
 - Added experimental Garry's Mod and Left 4 Dead 2 support
 	- Portal 2 support still has some problems, this will be released at a later date
 - Added 64-bit support for Garry's Mod and Team Fortress 2
@@ -337,13 +274,7 @@
 - Fixed crash when painting displacements if the displacement filters folder was empty
 - Fixed crash if trigger_catapult had missing keyvalues
 - Fixed crash if a face with valid luxels became invalid (0 area) and was baked in lighting preview
-	</pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8864 (November 1st 2022)</h1>
-          <pre>
+	</pre></div><div class="patch"><h1>Build 8864 (November 1st 2022)</h1><pre>
 - Added point_spotlight, env_beam and env_laser preview
 - Added ragdoll() helper to FGD to allow any entity to be simulated as ragdoll
 - Improved performance of creating entity helpers
@@ -356,13 +287,7 @@
 - Fixed hidden objects being included when collapsing instances
 	- If you want to restore old behavior, set InstanceCollapseHidden to 1 in the settings.ini
 - CSGO: Fixed crash when loading Portal 2/L4D2 particles
-	</pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8863 (October 31st 2022)</h1>
-          <pre>
+	</pre></div><div class="patch"><h1>Build 8863 (October 31st 2022)</h1><pre>
 - Added convex + hole checker for brushes. This will catch invalid brushes that Hammer wouldn't pick up as invalid before, but could have caused VBSP to die (such as with the infamous "BSP unbounded" error)
 	- Note: some maps may get reported as having invalid solids when they previously wouldn't. If these are inspected closely, very tiny edges or holes  can be discovered. A simple fix is to select all vertices and snap them to grid to make it valid again, or remake the brush.
 - Added textured sprite icons in 2D view. On by default, this can be toggled off in options
@@ -393,13 +318,7 @@
 - Fixed missing texture not appearing on sprites
 - Fixed missing texture sprites being super tiny
 - Reverted I/O performance changes to an earlier build. This should fix the rare situation where entities were unintentionally swapped
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8862 (July 1st 2022)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8862 (July 1st 2022)</h1><pre>
 - Fixed broken shaders and pixel shader errors under CSGO
 - Fixed entity swap bug when switching through outputs tab in I/O
 - Fixed memory error when undoing displacements
@@ -416,35 +335,17 @@
 - Unbound Duplicate Selection by default as users would accidentally press it, you can rebind it in the keybind editor
 - Hammer++ will now attempt to autosave under a memory crash
 - Removed dependency on BASS audio player, replaced with alternative
-	</pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8861 (June 25th 2022)</h1>
-          <pre>
+	</pre></div><div class="patch"><h1>Build 8861 (June 25th 2022)</h1><pre>
 - Added $color, $color2 and $srgbtint support to texture browser
 - Fixed Hammer++ not booting at all under CSGO
 - Fixed entity class changing to the wrong one when navigating through inputs/outputs tab
 - Fixed thumbnails not loading for certain textures
 - Fixed alignment issues with func_monitor textures
-	</pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8860 (February 10th 2022)</h1>
-          <pre>
+	</pre></div><div class="patch"><h1>Build 8860 (February 10th 2022)</h1><pre>
 - Added realtime arch tool in 2D/3D viewport, replacing the terrible 2D preview
 - Fixed precision loss when creating arches with height addition consisting of decimals
 - Fixed autosaves being flagged as invalid and displaying a warning message
-	</pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8859 (February 9th 2022)</h1>
-          <pre>
+	</pre></div><div class="patch"><h1>Build 8859 (February 9th 2022)</h1><pre>
 - Added feature to set background images
 	- Accessible in View -> Set Background Images
 	- Customizable and accepts common image formats like .png, .jpg, .tga etc
@@ -459,13 +360,7 @@
 - Fixed vmf_autosave files being incorrectly saved as 'vmf_autosavx'
 - Fixed missing texture sprites being very small
 - CSGO: Fixed Steam error when launching game from standard Run Map dialog
-	</pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8858 (January 30th 2022)</h1>
-          <pre>
+	</pre></div><div class="patch"><h1>Build 8858 (January 30th 2022)</h1><pre>
 - Added color correction preview, available in View -> Set Color Correction Preview
 	- Color correction will only display inside lighting preview mode
 - Added partial support for L4D2 under CSGO: Models that cause crashes will no longer be loaded
@@ -495,13 +390,7 @@
 - Fixed rare crash when loading a VMF while minimized
 - Fixed another crash related to displacement editing
 - Fixed eyedropper cursor appearing after escaping out of sprinkle tool
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8857 (January 25th 2022)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8857 (January 25th 2022)</h1><pre>
 - Fixed monitor and missing textures becoming misaligned when saving the map
 - Fixed tool texture and nodraw toggle not working inside instances
 - Fixed edge splitting failing in vertex manipulation in certain situations
@@ -515,13 +404,7 @@
 - CSGO: Potentially fixed control/alt/shift getting stuck in model browser causing input to not work
 - CSGO: Fixed browser for logic_script not working
 - Decimals in face edit sheet are now cut off if not needed
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8856 (January 24th 2022)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8856 (January 24th 2022)</h1><pre>
 - Fixed lighting preview not working under low texture quality. If lighting preview failed to work for you before, this is the fix
 - Fixed freeze when merging or spliting vertices in vertex edit tool
 - Fixed not being able to save VMFs inside cloud storage
@@ -539,13 +422,7 @@
 - Potentially fixed crash when trying to open the file dialog
 - Added keybind to switch to lighting preview model, default is Ctrl + F5
 - Tool texture rendering state is no longer saved between sessions
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8855 (January 23rd 2022)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8855 (January 23rd 2022)</h1><pre>
 - Fixed Hammer hard freezing if the game was started up
 - Fixed detail objects not being regenerated on a face if texture was changed
 - Fixed wrong materials being assigned to sprites/brushes when translating
@@ -571,13 +448,7 @@
 - Added option to disable gizmo
 - Lighting preview: added option to toggle "soften cosine" from CSGO, this softens the look of surfaces
 - Lighting preview: added debug option to show visibility tree and radius of selected lights
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8854 (January 22nd 2022)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8854 (January 22nd 2022)</h1><pre>
 - Fixed lighting preview running much slower than intended because multithreading was accidentally disabled
 - Fixed tool cursors sometimes failing to display in 2D view
 - Fixed crash while reloading models
@@ -588,13 +459,7 @@
 - Fixed missing materials on models not being reloaded
 - Material folders prefixed with "tools" will now count as tooltextures, such as "tools_custom/..."
 - Enter key can now be used in the 3D view when box selecting
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8853 (January 22nd 2022)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8853 (January 22nd 2022)</h1><pre>
 - Fixed crashes when using displacement tools
 - Fixed crash when showing map info if the map had more than 1024 textures
 - Fixed crash when creating env_sprite_clientside
@@ -607,21 +472,9 @@
 - Fixed a case where the error message would not appear
 - Vertex tool can now exit when invalid faces have displacements
 - Custom folders prefixed with "tools" will now count as tool textures (for the tooltexture render toggle)
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8852 (January 21st 2022)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8852 (January 21st 2022)</h1><pre>
 - Fixed an obstructive blue square appearing when selecting faces
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8851: Major update (January 21st 2022)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8851: Major update (January 21st 2022)</h1><pre>
 - Added Lighting Preview
 	- Simulate Source's iconic lighting right inside the editor
 	- High accuracy and reasonably fast when compared to VRAD
@@ -846,13 +699,7 @@
 - Removed file dialog hack as the file dialog now works properly without crashing
 - Removed support for power of 0/1 displacements
 - Manifests have been fully deprecated and will show a warning when used
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8849 (March 24th 2021)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8849 (March 24th 2021)</h1><pre>
 - Fixed "hammerplusplus_scheme.res failed to load" error, for real this time!
 - Fixed texture loading performance, this means you don't need to wait a long time for textures to cache anymore
 	- Behaves exactly like normal Hammer now
@@ -866,13 +713,7 @@
 - (TF2) Added back grouped mod sorting behavior in model browser
 - Deleting selection is now faster on bigger maps
 - Entity report is now closed when changing maps to prevent crashes from selecting invalid entities
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8848 (March 21st 2021)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8848 (March 21st 2021)</h1><pre>
 - Fixed "hammerplusplus_scheme.res failed to load" error on startup, fixes crashing and rendering issues
 - Added toggle to round points to integers in arch tool
 - Added back modern styled file dialog UI
@@ -920,13 +761,7 @@
 - Fixed being able to create arches with an arc of 0
 - Fixed func_details being assigned to World Geometry visgroup
 - Fixed func_instance VMF browse not showing an error message upon an invalid path
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8847 (March 17th 2021)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8847 (March 17th 2021)</h1><pre>
 - Added checking for updates automatically on startup, can be disabled in options or done manually in Help tab
 - Fixed search path behavior in SDK2013, it now behaves exactly like normal Hammer
 	- Old behavior can be enabled by creating a shortcut to Hammer++ with the '-legacy_searching' parameter added
@@ -969,13 +804,7 @@
 - Pivot is now prioritized over object origin when attempting to drag either one when they are overlapped in 2D view
 - Shift + Q bind has been added back, it deselects the selection
 - Polygon Tool has been rebound by default to Shift + N due to the above Shift + Q change
-  </pre
-          >
-        </div>
-
-        <div class="patch">
-          <h1>Build 8846: Initial public release (March 14th 2021)</h1>
-          <pre>
+  </pre></div><div class="patch"><h1>Build 8846: Initial public release (March 14th 2021)</h1><pre>
 <b>General:</b>
 	- Improved framerates, capped at 144 by default but can be changed in options
 	- Smoother and better performance overall
@@ -1403,21 +1232,4 @@
 
 	Map Information dialog:
 		- Anything inside instances now adds to the solid and entity count
-    </pre>
-        </div>
-      </article>
-    </div>
-
-    <footer>
-      <a target="_blank" class="link" href="https://ko-fi.com/ficool2">
-        <img src="/img/kofi.png" />
-      </a>
-      <p>
-        Hammer++ is not affiliated with Valve Corporation. Like or enjoy my
-        work? Support me on
-        <a target="_blank" href="https://ko-fi.com/ficool2"> Ko-fi</a>.
-      </p>
-    </footer>
-  </body>
-
-</html>
+    </pre></div></article></div><footer><a target="_blank" class="link" href="https://ko-fi.com/ficool2"><img src="img/kofi.png"/></a><p>Hammer++ is not affiliated with Valve Corporation. Like or enjoy my work? Support me on <a target="_blank" href="https://ko-fi.com/ficool2">Ko-fi</a>.</p></footer></body><script src="script.js"></script></html>
