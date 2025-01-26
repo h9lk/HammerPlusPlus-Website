@@ -51,7 +51,6 @@ module.exports = {
     new webpack.ProgressPlugin(handler),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      favicon: './src/img/favicon.ico',
       inject: true,
       chunks: ['index']
     }),
