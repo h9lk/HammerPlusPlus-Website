@@ -18,7 +18,7 @@ export default defineConfig({
         chunkFileNames: `js/[name].js`,
         assetFileNames: (assetInfo) => {
           if (assetInfo.name === 'script.css') {
-            return 'css/style.css';
+            return '/css/style.css';
           }
           return `img/${assetInfo.name}`;
         },
