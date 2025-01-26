@@ -1,1 +1,193 @@
-<html lang="en"><head><title>Hammer++ : Download</title><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="icon" type="img/png" href="img/favicon-32x32.png" sizes="32x32"/><link rel="stylesheet" href="main.css"/></head><body><div class="content"><a class="logo" href="index.html"><img src="img/logo.png"/></a><nav class="navbar"></nav><article><div class="info"><h3>Current build version is: <i>8869</i></h3><h3>Last updated: November 17th, 2024</h3></div><br/><div class="info">Hammer++ supports different branches of Source engine.<br/>Click the correct one for the game you are mapping for, or Hammer++ will not start.<br/>Installation instructions are found inside a README.txt file contained in the downloads.<br/><br/>HLMV++ is now also bundled with the downloads and can be optionally installed.</div><div class="section"><h1 class="section-title">Updating</h1><p class="section-content">To update Hammer++ if you had it already installed, download the new version, then simply drag and drop the files over your existing install. When you are asked to overwrite any files, click yes.</p></div><div class="section"><h1 class="section-title">Game/Mod not listed?</h1><p class="section-content">You might still be able to use Hammer++ with it.<br/>If it's a multiplayer game or mod, use the Source SDK 2013 Multiplayer download.<br/>For singleplayer, try the Source SDK 2013 Singleplayer download.</p></div><div class="section"><h1 class="section-title"><span class="error">Issues</span></h1><p class="section-content">The downloads sometimes get marked as malware by certain antiviruses.<br/>If this happens, you must allow it or add an exception in your antivirus.<br/>I'm unable to do anything about this, sorry for the inconvenience!<br/><br/>Some Windows versions have an issue where the File Open dialog will freeze Hammer++.<br/>Workaround: Open <code>hammerplusplus_settings.ini</code> in Notepad and set FileDialogHack to false.</p></div><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_gmod_build8869.zip"><img src="img/gmod.png"/> </a><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_tf2_build8869.zip"><img src="img/teamf2.png"/> </a><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_portal2_build8869.zip"><img src="img/portal2.png"/> </a><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_l4d2_build8869.zip"><img src="img/l4d2.png"/> </a><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013mp_build8869.zip"><img src="img/CSS.png"/> </a><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013mp_build8869.zip"><img src="img/dods.png"/> </a><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013sp_build8869.zip"><img src="img/halflife2.png"/></a><div class="section"><h1 class="section-title"><span class="error">Warning</span></h1><p class="section-content">Are you following a tutorial to install the Source 2013 Multiplayer version for Garry's Mod?<br/>DON'T! That tutorial is probably outdated.<br/><br/>There is now a Garry's Mod version of Hammer++ which is much easier to install and better supported. Download it above, unzip it and read the README file inside.</p><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013mp_build8869.zip"><img src="img/sourcesdk2013mp.png"/> </a><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013sp_build8869.zip"><img src="img/sourcesdk2013sp.png"/></a></div><div class="section"><h1 class="section-title"><span class="error">Warning</span></h1><p class="section-content">CS:GO is not supported and is frozen on build 8864.<br/>It is left here for historical purposes. Consider using the Garry's Mod version instead. Garry's Mod supports loading content from the newer games, including CS:GO.</p><a class="download" href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8864/hammerplusplus_csgo_build8864.zip"><img src="img/csgo.png"/></a></div><div class="section"><h1 class="section-title">Unofficial games or mods</h1><p class="section-content">Info about Hammer++ compatibility with other games/mods can be found <a target="_blank" href="https://developer.valvesoftware.com/wiki/Hammer%2B%2B#Other_games.2Fmods_tested">on the wiki</a>.</p></div></article></div><footer><a target="_blank" class="link" href="https://ko-fi.com/ficool2"><img src="img/kofi.png"/></a><p>Hammer++ is not affiliated with Valve Corporation. Like or enjoy my work? Support me on <a target="_blank" href="https://ko-fi.com/ficool2">Ko-fi</a>.</p></footer></body><script src="script.js"></script></html>
+<html lang="en">
+  <head>
+    <title>Hammer++ : Download</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="img/png"
+      href="/img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <script type="module" crossorigin src="/js/script.js"></script>
+    <link rel="stylesheet" crossorigin href="/css/style.css">
+  </head>
+  <body>
+    <div class="content">
+      <a class="logo" href="index.html">
+        <img src="/img/logo.png" />
+      </a>
+      <nav class="navbar"></nav>
+      <article>
+        <div class="info">
+          <h3>Current build version is: <i>8869</i></h3>
+          <h3>Last updated: November 17th, 2024</h3>
+        </div>
+
+        <br />
+
+        <div class="info">
+          Hammer++ supports different branches of Source engine.<br />
+          Click the correct one for the game you are mapping for, or Hammer++
+          will not start.<br />
+          Installation instructions are found inside a README.txt file contained
+          in the downloads.<br /><br />
+          HLMV++ is now also bundled with the downloads and can be optionally
+          installed.
+        </div>
+
+        <div class="section">
+          <h1 class="section-title">Updating</h1>
+          <p class="section-content">
+            To update Hammer++ if you had it already installed, download the new
+            version, then simply drag and drop the files over your existing
+            install. When you are asked to overwrite any files, click yes.
+          </p>
+        </div>
+
+        <div class="section">
+          <h1 class="section-title">Game/Mod not listed?</h1>
+          <p class="section-content">
+            You might still be able to use Hammer++ with it.<br />
+            If it's a multiplayer game or mod, use the Source SDK 2013
+            Multiplayer download.<br />
+            For singleplayer, try the Source SDK 2013 Singleplayer download.
+          </p>
+        </div>
+
+        <div class="section">
+          <h1 class="section-title"><span class="error">Issues</span></h1>
+          <p class="section-content">
+            The downloads sometimes get marked as malware by certain
+            antiviruses.<br />
+            If this happens, you must allow it or add an exception in your
+            antivirus.<br />
+            I'm unable to do anything about this, sorry for the
+            inconvenience!<br />
+            <br />
+            Some Windows versions have an issue where the File Open dialog will
+            freeze Hammer++.<br />
+            Workaround: Open <code>hammerplusplus_settings.ini</code> in Notepad
+            and set FileDialogHack to false.
+          </p>
+        </div>
+
+        <a
+          class="download"
+          href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_gmod_build8869.zip"
+        >
+          <img src="/img/gmod.png" />
+        </a>
+
+        <a
+          class="download"
+          href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_tf2_build8869.zip"
+        >
+          <img src="/img/teamf2.png" />
+        </a>
+
+        <a
+          class="download"
+          href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_portal2_build8869.zip"
+        >
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxMAAAEACAYAAADIhytMAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AsSAzAGj2Cw1QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAANxklEQVR42u3dfU4jORMHYLzKBTgKZwLEmRBwJo7CEbz/jWb4SEjSbVeVn0ca6d13diHtLtv1S3cn7f7h6QYAACJ4e33+87/vH57++efbl3cDFMx/hgAAgGg+BwmECQAAQJgAAIBt/X0l4u31+cbt+MIEAAD8yufw4DYnYQIAAM4KFK5ICBMAAIAwAQAA8NXBEAAAEIXnJHJxZQIAABAmAAAAYQIAABAmAADgd3wsrDABAAAChTABAADwPR8NCwBAGD4aVpgAAIDRQaIf+btmdPfhNicAAEK4f3jyvIQwAQAACBMAADCQZyaECQAAuIjbnIQJAAAQKIQJAAAAYQIAABAmAACozK1OwgQAAFzEpzoJEwAAIEgIEwAAMIZbnIQJAAC4iCsTwgQAACBMAADAGK5KCBMAAIAwAQAAY7gqIUwAAADCBAAAgDABAEBwvl9CmAAAAIQJAAAAYQIAABAmAACACA6GAAAAhuhH/q5lPCBXJgAACKPQJzr1b/6c8++n4MoEAABsGyK2/jlhr1oIEwAAECdEHPvZ4UKF25wAAAjj7fU5Y4joA3+XMAEAAAX0Sb8zTKgQJgAAIEeQiPT7hQkAAGJJ8mlO3esQJgAAECiyBokQr0eYAACAnEFiOmECAIBQEn6i07IhR5gAAIDADXvk1ydMAAAQRtCrEm5vEiYAAKC04aFHmAAAgEANeibCBAAACD/CBAAAIEwAAMBsbnESJgAAyOL+4enHb8D+eLwzQMFCkDABAAAIEwAAgDABAMCifvriutuXd4MjTAAAwHlBAmECAACO+unh6wlXJXySkzABAEAFPslJmAAAgKOO3eY0OFA0Z0OYAAAgkZ9uc0KYAAAAhAkAANieT3MSJgAAYBcXPjfhk5mECQAAVnfFR8T2hULFsIfHhQkAAMK4f3ja+yHscwKFT3QSJgAA4OJAwREHQwAAsGQzHPJd94EPYPfI45DlvLoyAQAQPzh8/hP55+5qhy+uO3XcbnU6wpUJAICYAWL2722LjbfQIEwAAAgQgsVVx/vdsbabHFduhp8nYYIRi5ykDwB5QsS5jXbF85HxOKe85kPxwtfoxji/vei4mwPG2rmdez6rrt+9cD30E6/vu3fCK7873hO/5ur903eBot3YjzYNE5UncjMWQ3+XQGcOAKz0RkIvdAzD94srvrSucqCYtm8LExrdHug1aGDNATSH1270xHbO1QZBQqiIenzRAsXUsffRsL8rou64jLU5AIC1dJmQdOr4ooSn6a9DmFhzEejGGucF6xmo04zHucP3TGQNFCECjTCxVkOV7bVrXm2KqB1Q9443cm8yq6EPc1uZMLHGZMnelGtA1BSA/ctx39zcDH0A+7fH2AY29yN/lzBhkSi1kGle1Reow7WEa5rUZYzjn3ib06ljbCvOB2Gi9mLRjTeCHuYuqHfjMGwPbBs3/uFDtY+G3XayNBN42LH5OEjnBcirnfH/Z1tXBIk194afvpPikrpINV7CRM0J0401zgtqD+y/5meY4yx7/G5zspA5VsBcBXVufLY7zqVqQZioNVm68cY5ASCz+4eno38f5NOc7IXCRLkC6sYb5wR1B2rPODleYUIBKVZj4JygDkCNLzleb6/PR/8+0EfDqg9hAgCNHZBJktucPq9LZdcmYSL/pmbjNBbOCc4/qPES43bqqkTCIFG+XoSJ3IVjEQMAyjj18PXH412225zK927CBMIbzglqDtQZY2unTP340rpxRdN2+JkztcCvz5dXgUYLKNobJb/VqVy/EjFMtAEnjv3PTTPm5sCGC2ab8HoznlsABIqhVrzNqf31J3PhzRizWf89sc4nWCdRXxjHbcch7VisfptTG3jyMibPttPP68Y71Pm1mKNBgHpruznJEB7A9i7tqCAx6mcT93zYzAD27WXahX8fxqmPhi0u5T4pTORrcHuRsWgmpfoHawBsEiL2/m9CSf7RsOXWLWFibEPVjYEG1rlHAw9qPMCanXbNL/RpTiUIE4BAAbDmWh1hzf8nnJ360jqECc3UhhOuyLFrXteaA961rq17TZBujQ61D596ZmKRqxKp1i1hgupNvUYCAHs1CBMmq/EGuIg3FaDIPlz84WthArCxoGEH2IuHr4UJNI6aVwCwTyJMMJh3/QCsobC0hW5zSrNmCROYkIA5BrjygTBh0wUAqNufeGZCmEDyB5i1VnozB0CYQLgBAtGgAwgTINigQcSa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" />
+        </a>
+
+        <a
+          class="download"
+          href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_l4d2_build8869.zip"
+        >
+          <img src="/img/l4d2.png" />
+        </a>
+
+        <a
+          class="download"
+          href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013mp_build8869.zip"
+        >
+          <img src="/img/CSS.png" />
+        </a>
+
+        <a
+          class="download"
+          href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013mp_build8869.zip"
+        >
+          <img src="/img/dods.png" />
+        </a>
+
+        <a
+          class="download"
+          href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013sp_build8869.zip"
+        >
+          <img src="data:image/png;base64,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" />
+        </a>
+
+        <div class="section">
+          <h1 class="section-title"><span class="error">Warning</span></h1>
+          <p class="section-content">
+            Are you following a tutorial to install the Source 2013 Multiplayer
+            version for Garry's Mod?<br />DON'T! That tutorial is probably
+            outdated. <br /><br />
+            There is now a Garry's Mod version of Hammer++ which is much easier
+            to install and better supported. Download it above, unzip it and
+            read the README file inside.
+          </p>
+
+          <a
+            class="download"
+            href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013mp_build8869.zip"
+          >
+            <img src="/img/sourcesdk2013mp.png" />
+          </a>
+
+          <a
+            class="download"
+            href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8869/hammerplusplus_2013sp_build8869.zip"
+          >
+            <img src="/img/sourcesdk2013sp.png" />
+          </a>
+        </div>
+
+        <div class="section">
+          <h1 class="section-title"><span class="error">Warning</span></h1>
+          <p class="section-content">
+            CS:GO is not supported and is frozen on build 8864.<br />It is left
+            here for historical purposes. Consider using the Garry's Mod version
+            instead. Garry's Mod supports loading content from the newer games,
+            including CS:GO.
+          </p>
+
+          <a
+            class="download"
+            href="https://github.com/ficool2/HammerPlusPlus-Website/releases/download/8864/hammerplusplus_csgo_build8864.zip"
+          >
+            <img src="/img/csgo.png" />
+          </a>
+        </div>
+
+        <div class="section">
+          <h1 class="section-title">Unofficial games or mods</h1>
+          <p class="section-content">
+            Info about Hammer++ compatibility with other games/mods can be found
+            <a
+              target="_blank"
+              href="https://developer.valvesoftware.com/wiki/Hammer%2B%2B#Other_games.2Fmods_tested"
+              >on the wiki</a
+            >.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <footer>
+      <a target="_blank" class="link" href="https://ko-fi.com/ficool2">
+        <img src="/img/kofi.png" />
+      </a>
+      <p>
+        Hammer++ is not affiliated with Valve Corporation. Like or enjoy my
+        work? Support me on
+        <a target="_blank" href="https://ko-fi.com/ficool2"> Ko-fi</a>.
+      </p>
+    </footer>
+  </body>
+</html>
