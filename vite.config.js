@@ -4,6 +4,7 @@ const path = 'src';
 export default defineConfig({
   root: path,
   emptyOutDir: true,
+  minify: true,
   build: {
     rollupOptions: {
       input: {
