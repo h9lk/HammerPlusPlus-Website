@@ -1,7 +1,7 @@
 import genNav from './modules/navbar.js'
-import addPatches from './modules/patches.js'
 import setSplitImages from './modules/images.js'
 import animateImages from './modules/animate.js'
+import addPatches from './modules/patches.js'
 import '../sass/style.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const patches = document.querySelectorAll('.patch')
   const splits = document.querySelectorAll('.img-split')
 
-  if (splits.length > 1) {
+  if (splits) {
     setSplitImages(splits)
     animateImages()
-  } else if (patches.length > 1) {
+  }
+  if (patches) {
     addPatches(patches)
   }
 
